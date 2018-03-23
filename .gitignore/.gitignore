@@ -1,4 +1,4 @@
-*
-!./.config/.vimrc
-!./.config/.tmux.conf
-!.zshrc
+/*
+!~/.config/.vimrc
+!~/.tmux.conf
+!~/.zshrc
