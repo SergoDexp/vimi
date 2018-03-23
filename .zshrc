@@ -95,4 +95,4 @@ alias go=""
 alias zshconfig="mate ~/.config.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:$HOME/bin
-export EDITOR='subl -w'
+export EDITOR='vim'
