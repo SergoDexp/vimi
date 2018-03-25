@@ -35,7 +35,13 @@ filetype off
 set rtp+=~/.vim/Vundle.vim
 
 call vundle#begin()
-
+"=======js
+Plugin 'pangloss/vim-javascript', {'for':'javascript'}
+Plugin 'jelera/vim-javascript-syntax', {'for':'javascript'}
+Plugin 'gavocanov/vim-js-indent', {'for':'javascript'}
+Plugin 'othree/es.next.syntax.vim', {'for':'javascript'}
+Plugin 'wizicer/vim-jison', {'for':'javascript'}
+"=======js-end
 Plugin 'tpope/vim-fugitive'
 Plugin 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plugin 'StanAngeloff/php.vim'
@@ -79,10 +85,12 @@ let g:cpp_class_decl_highlight = 1
 
 "=================Some=Settings====================================
 
+"let g:gitgutter_highlight_lines = 1
 "=======YCM=PY=SET=EXTRA==
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 "=================Compile=C++======================================
+autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ -lglut -lGL -lGLU -lGLEW '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 
 map <C-n> :NERDTreeToggle<CR>
