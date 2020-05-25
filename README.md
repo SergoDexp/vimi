@@ -7,7 +7,7 @@ My Vim Settings
   
 ### Clone VIMI to `~`
 
-  ` git clone https://github.com/SergoDexp/vimi.git ~/.
+  ` git clone https://github.com/SergoDexp/vimi.git ~/`
   
 ### Add source in u own .vimrc
   1. ` vim .vimrc`
